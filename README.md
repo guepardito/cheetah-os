@@ -11,10 +11,14 @@ You will also need qemu to emulate the OS where can be found at [qemu official p
 
 Use **make** to generate **kernel.elf**
 
-> make
+```
+make
+```
 
 ## Running CheetahOS
 
 Once you compiled the kernel, you may use the following command to run CheetahOS
 
-> qemu-system-riscv64 -machine virt -cpu rv64 -smp 4 -m 128M -nographic -serial mon:stdio -bios none -kernel kernel.elf
+```
+qemu-system-riscv64 -machine virt -cpu rv64 -smp 4 -m 128M -nographic -serial mon:stdio -bios none -kernel kernel.elf
+```
